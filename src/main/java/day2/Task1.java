@@ -17,6 +17,7 @@ public class Task1 {
         else {
             System.out.println("Ошибка ввода");
         }
+        scanner.close();
 
 
         // СВОЕВОЛЬНЫЕ РЕШЕНИЯ

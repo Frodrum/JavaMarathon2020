@@ -12,8 +12,9 @@ public class Task2 {
         while(0 != divider) {
             System.out.println(dividend / divider);
 
-            dividend = scanner.nextInt();
-            divider = scanner.nextInt();
+            dividend = scanner.nextDouble();
+            divider = scanner.nextDouble();
         }
+        scanner.close();
     }
 }

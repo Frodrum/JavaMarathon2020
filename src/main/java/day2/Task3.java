@@ -23,5 +23,6 @@ public class Task3 {
                 ++counter;
             }
         }
+        scanner.close();
     }
 }

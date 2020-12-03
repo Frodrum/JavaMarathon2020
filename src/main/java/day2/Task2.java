@@ -22,5 +22,6 @@ public class Task2 {
                 }
             }
         }
+        scanner.close();
     }
 }

@@ -6,9 +6,9 @@ public class Task1 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String city = scanner.nextLine();
+        String city;
 
-        while (!"Stop".equals(city)) {
+        while (!"Stop".equals(city = scanner.nextLine())) {
             switch (city) {
                 case "Москва":
                 case "Владивосток":
@@ -37,7 +37,7 @@ public class Task1 {
                 default:
                     System.out.println("Неизвестная страна");
             }
-            city = scanner.nextLine();
         }
+        scanner.close();
     }
 }
