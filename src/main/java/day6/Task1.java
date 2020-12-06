@@ -6,6 +6,9 @@ public class Task1 {
         int randomYear = (int)Math.round(1980 + Math.random() * 40);
 
         car.info();
-        System.out.printf("Год выпуска автомобиля %d, год для сравнения %d. Разница: %d", car.getYearOfIssue(), randomYear, car.yearDifference(randomYear));
+        System.out.printf("Год выпуска автомобиля %d, год для сравнения %d. Разница: %d",
+                car.getYearOfIssue(),
+                randomYear,
+                car.yearDifference(randomYear));
     }
 }
