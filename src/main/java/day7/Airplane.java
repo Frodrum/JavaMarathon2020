@@ -21,8 +21,12 @@ public class Airplane {
     private double fuel = 0;
 
     public static void compareAirplanes(Airplane firstAirplane, Airplane secondAirplane) {
-        System.out.println(firstAirplane.getLength() > secondAirplane.getLength() ? "Первый самолёт длиннее"
-                : (firstAirplane.getLength() == secondAirplane.getLength() ? "Длины самолётов равны" : "Второй самолёт длиннее"));
+        if (firstAirplane.getLength() > secondAirplane.getLength())
+            System.out.println("Первый самолёт длиннее");
+        else if (firstAirplane.getLength() < secondAirplane.getLength())
+            System.out.println("Второй самолёт длиннее");
+        else
+            System.out.println("Длины самолётов равны");
     }
 
     public void info() {
