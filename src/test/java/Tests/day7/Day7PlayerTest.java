@@ -45,13 +45,29 @@ public class Day7PlayerTest extends AbstractTest {
         assertEquals(0, p.getStamina(), "Вызов метода run, 1 раз на объекте класса Player (stamina = 0). Выносливость: ");
     }
 
+//    @Test
+//    public void countWhenStamina0() {
+//        Player p = new Player(1);
+//        p.run();
+//        p.run();
+//        assertEquals(0, Player.getCountPlayers(), "Создан один экземпляр Player (stamina = 1). Вызов метода run, 2 раза " +
+//                "на объекте класса Player (stamina = 1). Общее количество игроков");
+//    }
+
     @Test
     public void countWhenStamina0() {
         Player p = new Player(1);
+        Player p2 = new Player(10);
+        Player p3 = new Player(10);
+        Player p4 = new Player(10);
+        System.out.println(Player.getCountPlayers());
         p.run();
         p.run();
-        assertEquals(0, Player.getCountPlayers(), "Создан один экземпляр Player (stamina = 1). Вызов метода run, 2 раза " +
-                "на объекте класса Player (stamina = 1). Общее количество игроков");
+        p.run();
+        p.run();
+        assertEquals(0, p.getStamina());
+        assertEquals(3, Player.getCountPlayers(), "Вызов метода run, 4 раза " +
+                "на объекте класса Player (stamina = 1), при общем кол-ве игроков 4. Общее количество игроков стало");
     }
 
     @Test

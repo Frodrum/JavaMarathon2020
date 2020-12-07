@@ -26,11 +26,8 @@ public class Teacher {
             case 4:
                 mark = "Хорошо";
                 break;
-            case 5:
-                mark = "Отлично";
-                break;
             default:
-                mark = "Что-то странное с этим студентом";
+                mark = "Отлично";
         }
 
         System.out.printf("Преподаватель %s оценил студента с именем %s по предмету %s на оценку %s\n", name, someStudent.getName(), subject, mark);
