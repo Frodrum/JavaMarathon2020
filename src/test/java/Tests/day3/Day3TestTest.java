@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class Day3Task1Test extends AbstractTest {
+public class Day3TestTest extends AbstractTest {
 
     @Test
     public void Moscow() {
