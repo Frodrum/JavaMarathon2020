@@ -1,22 +1,11 @@
 package day11.task2;
 
-public class Paladin extends Hero implements PhysAttack, Healer {
+public class Paladin extends Hero implements Healer {
 
     public Paladin() {
         super.setPhysAtt(15);
         super.setPhysDef(0.5);
         super.setMagicDef(0.2);
-    }
-
-    @Override
-    public void physicalAttack(Hero hero) {
-        if (hero.getPhysDef() == 1)
-            hero.setHealth(hero.getHealth() - super.getPhysAtt());
-        else
-            hero.setHealth(hero.getHealth() - (super.getPhysAtt() - super.getPhysAtt() * hero.getPhysDef()));
-
-        if (hero.getHealth() < 0)
-            hero.setHealth(0);
     }
 
     @Override
