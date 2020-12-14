@@ -18,15 +18,10 @@ public class MessageDatabase {
         for (int i = 0; i < listOfMessage.size(); i++) {
             Message tmp = listOfMessage.get(i);
 
-            if (tmp.getSender().equals(u1) && tmp.getReceiver().equals(u2)) {
-                showMessage(tmp);
-            } else if (tmp.getSender().equals(u2) && tmp.getReceiver().equals(u1)) {
-                showMessage(tmp);
+            if ((tmp.getSender().equals(u1) && tmp.getReceiver().equals(u2))
+                    || (tmp.getSender().equals(u2) && tmp.getReceiver().equals(u1))) {
+                System.out.printf("%s: %s\n", tmp.getSender().getUsername(), tmp.getText());
             }
         }
-    }
-
-    private static void showMessage(Message message) {
-        System.out.printf("%s: %s\n", message.getSender().getUsername(), message.getText());
     }
 }
